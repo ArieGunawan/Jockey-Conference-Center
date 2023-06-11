@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jockey's Conference Center</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js "
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- My style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"
+        ><img src="gambar/logo.png" width="100px" alt="" />ConferenceCenter.</a
+      >
+
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="Event.html">Events</a>
+        <a href="Price.html">Pricelist</a>
+        <a href="About.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+    <!-- Contact start -->
+
+    <div id="kontakpage" class="kontakpage">
+      <h2><span>Contact</span> Us</h2>
+    </div>
+
+    <div class="container">
+      <form>
+        <i class="fas fa-paper-plane"></i>
+
+        <div class="input-group">
+          <label>Full Name</label>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            id="contact-name"
+            onkeyup="validateName()"
+          />
+          <span id="name-error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Phone No.</label>
+          <input
+            type="tel"
+            placeholder="123 456 7890"
+            id="contact-phone"
+            onkeyup="validatePhone()"
+          />
+          <span id="phone-error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Email Id</label>
+          <input
+            type="email"
+            placeholder="Enter Email"
+            id="contact-email"
+            onkeyup="validateEmail()"
+          />
+          <span id="email-error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Your Message</label>
+          <textarea
+            rows="5"
+            placeholder="Enter your message"
+            id="contact-message"
+            onkeyup="validateMessage()"
+          ></textarea>
+          <span id="message-error"></span>
+        </div>
+
+        <div class="input-group1">
+          <label>Method</label>
+          <input type="radio" name="Ways" value="number" />Phone<br />
+          <input type="radio" name="Ways" value="email" />Email<br />
+          <span id="method-error"></span>
+        </div>
+
+        <button onclick="return validateForm()">Submit</button>
+        <span id="submit-error"></span>
+      </form>
+    </div>
+
+    <!-- Contact end -->
+
+    <!-- Footer Start -->
+
+    <footer>
+      <div class="sosial">
+        <a href="#"><i data-feather="instagram"> </i></a>
+        <a href="#"><i data-feather="twitter"> </i></a>
+        <a href="#"><i data-feather="facebook"> </i></a>
+      </div>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="Event.html">Events</a>
+        <a href="Price.html">Pricelist</a>
+        <a href="About.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">Ari Gunawan</a>. | &copy; 2023</p>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- Feather icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
